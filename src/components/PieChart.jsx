@@ -14,14 +14,14 @@ const PieChart = ({ data }) => {
       };
     return(
 
-        <div style={{width:'100%', height:'28vh'}}>
+        <div style={{width:'100%', height:'95vh'}}>
 
-            <h3>Passenger Concentration</h3>
+<p style={{fontSize:"2vh", fontWeight:"bold"}}>Passenger Concentration</p>
     <ResponsivePie
       data={data}
       
-      margin={{top:30, right: 30, left: 30, bottom: 30}}
-      
+      margin={{top:10, right: 25, left: 25, bottom: 15}}
+      arcLabel={e=>e.id+" ("+e.value+")"}
       innerRadius={0.5}
       padAngle={1}
       cornerRadius={3}
@@ -31,10 +31,12 @@ const PieChart = ({ data }) => {
       arcLinkLabelsSkipAngle={10}
       arcLinkLabelsTextColor="#333333"
       colors={getColor}
+      enableArcLinkLabels={false}
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: 'color' }}
       arcLabelsSkipAngle={10}
       arcLabelsTextColor={{ from: 'color', modifiers: [['darker', 2]] }}
+
 
     />
     

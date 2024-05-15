@@ -1,11 +1,12 @@
 #root {
-  margin: 1px;
+
+  margin: 0px;
   padding: 0px;
+  width:100%;
+
   text-align: center;
   background-color: white;
   color: black;
-  display: flex;
-  justify-content: center;
   overflow:visible;
 }
 
