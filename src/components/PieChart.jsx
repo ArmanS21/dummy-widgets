@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ResponsivePie } from "@nivo/pie";
 
 const PieChart = ({ data }) => {
@@ -12,7 +13,9 @@ const PieChart = ({ data }) => {
         return colors[bar.id] || 'gray'; 
       };
     return(
-        <div style={{width:'50%', height:'50vh'}}>
+
+        <div style={{width:'100%', height:'28vh'}}>
+
             <h3>Passenger Concentration</h3>
     <ResponsivePie
       data={data}
@@ -34,7 +37,10 @@ const PieChart = ({ data }) => {
       arcLabelsTextColor={{ from: 'color', modifiers: [['darker', 2]] }}
 
     />
+    
     </div>
+
+
     )
 };
 export default PieChart;
