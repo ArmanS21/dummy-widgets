@@ -13,7 +13,7 @@ const BarChart = ({ data }) => {
         return colors[bar.id] || 'gray';
       };
   return (
-    <div style={{ height: '250px'}}>
+    <div style={{ height: '300px'}}>
         <h4>Beverages shipped to Qantas Lounge</h4>
       <ResponsiveBar
         data={data}
@@ -26,7 +26,7 @@ const BarChart = ({ data }) => {
 
         ]}
         indexBy="Beverage Type"
-        margin={{ top: 5, right: 5, bottom: 20, left: 50 }}
+        margin={{ top: 5, right: 5, bottom: 50, left: 50 }}
         padding={0.2}
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
