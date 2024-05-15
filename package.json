@@ -1,5 +1,6 @@
 {
   "name": "dummy-widgets-app",
+  "homepage": "https://armans21.github.io/dummy-widgets",
   "private": true,
   "version": "0.0.0",
   "type": "module",
