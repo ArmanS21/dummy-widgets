@@ -2,7 +2,7 @@ import './App.css';
 import BarChart from './components/BarChart';
 import PieChart from './components/PieChart';
 import QueueTimer from './components/QueueTimer';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   var beerX = Math.floor(Math.random() * (100-20)+20);
