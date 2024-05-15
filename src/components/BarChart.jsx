@@ -13,7 +13,7 @@ const BarChart = ({ data }) => {
         return colors[bar.id] || 'gray';
       };
   return (
-    <div style={{ height: '350px'}}>
+    <div style={{ height: '250px'}}>
         <h4>Beverages shipped to Qantas Lounge</h4>
       <ResponsiveBar
         data={data}
