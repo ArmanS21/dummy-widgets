@@ -1,13 +1,13 @@
 import React from 'react';
 import { ResponsiveBar } from '@nivo/bar';
-
+let datathree=[]
 const Randomizer = () => {
-    const [number, setNumber] = React.useState(0);
+    const [number, setNumber] = React.useState(Math.floor(Math.random() * (80-5)+5));
     React.useEffect(() => {
 
       const interval = setInterval(
-        () => setNumber(Math.floor(Math.random() * 100 + 1)),
-        5000
+        () => setNumber(Math.floor(Math.random() * (80-5)+5)),
+        1500
       );
       return () => {
         clearInterval(interval);
@@ -16,7 +16,29 @@ const Randomizer = () => {
   
     return number;
   };
-const BarChart = ({ data }) => {
+
+const BarChart = () => {
+    datathree = [
+        {
+          "Beverage Type": "Beer",
+          "Beer": Randomizer(),
+    
+        },
+        {
+          "Beverage Type": "Wine",
+          "Wine": Randomizer(),
+    
+        },
+        {
+          "Beverage Type": "Vodka",
+          "Vodka": Randomizer(),
+        },
+        {
+          "Beverage Type": "Cola",
+          "Cola": Randomizer(),
+    
+        }
+      ]
     const getColor = bar => {
         
         const colors = {
@@ -34,7 +56,7 @@ const BarChart = ({ data }) => {
         <p style={{fontSize:"3vh", fontWeight:"bold"}}>Beverages Shipped to Qantas Lounge</p>
       <ResponsiveBar
         style={{fontSize:'10%'}}
-        data={data}
+        data={datathree}
         colors={getColor}
         keys={[
             'Beer',

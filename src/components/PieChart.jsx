@@ -1,8 +1,32 @@
 import React from 'react';
 
 import { ResponsivePie } from "@nivo/pie";
+let datatwo = [];
+const Randomizer = () => {
+  const [number, setNumber] = React.useState((Math.floor(Math.random() * (1000-100) + 100)));
+  React.useEffect(() => {
 
-const PieChart = ({ data }) => {
+    const interval = setInterval(
+      () => setNumber(Math.floor(Math.random() * (1000-100) + 100)),
+      1500
+    );
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  return number;
+};
+
+
+const PieChart = () => {
+  datatwo = [
+    
+    { id: "Retail Area", label: "Retail Area", value: Randomizer()-80, color: "rgb(100 116 139)" },
+    { id: "Security", label: "Security", value: Randomizer()-50, color: "hsl(56, 70%, 50%)" },
+    { id: "Departures", label: "Departures", value: Randomizer()+150, color: "hsl(0, 100%, 50%)" },
+    { id: "Arrivals", label: "Arrivals", value: Randomizer()+200, color: "hsl(186, 70%, 50%)" },
+  ]
     const getColor = bar => {
         const colors = {
           'Retail Area': '#E2E8F0',
@@ -18,7 +42,7 @@ const PieChart = ({ data }) => {
 
 <p style={{fontSize:"1vh", fontWeight:"bold"}}>Passenger Concentration</p>
     <ResponsivePie
-      data={data}
+      data={datatwo}
       
       margin={{top:10, right: 25, left: 25, bottom: 15}}
       arcLabel={e=>e.id+" ("+e.value+")"}
