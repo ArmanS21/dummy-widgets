@@ -7,6 +7,21 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 let datathree = []
 let datatwo = []
+const Randomizer = () => {
+  const [number, setNumber] = React.useState(0);
+  React.useEffect(() => {
+
+    const interval = setInterval(
+      () => setNumber(Math.floor(Math.random() * 100 + 1)),
+      1500
+    );
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  return number;
+};
 function fetchplusupdate(){
   var beerX = Math.floor(Math.random() * (100-20)+20);
   var wineX = Math.floor(Math.random() * (75-10)+10);
@@ -51,15 +66,9 @@ function fetchplusupdate(){
 
 }
 
+
 function App() {
-
 fetchplusupdate();
-  useEffect(() => {
-    setTimeout(fetchplusupdate,1000);
-  }, []);
-  
-
-
 return (
 
   <Router>

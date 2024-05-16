@@ -16,7 +16,7 @@ const PieChart = ({ data }) => {
 
         <div style={{width:'100%', height:'95vh'}}>
 
-<p style={{fontSize:"2vh", fontWeight:"bold"}}>Passenger Concentration</p>
+<p style={{fontSize:"1vh", fontWeight:"bold"}}>Passenger Concentration</p>
     <ResponsivePie
       data={data}
       

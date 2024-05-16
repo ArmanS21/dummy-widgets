@@ -1,7 +1,21 @@
 import React from 'react';
 import { ResponsiveBar } from '@nivo/bar';
 
+const Randomizer = () => {
+    const [number, setNumber] = React.useState(0);
+    React.useEffect(() => {
 
+      const interval = setInterval(
+        () => setNumber(Math.floor(Math.random() * 100 + 1)),
+        5000
+      );
+      return () => {
+        clearInterval(interval);
+      };
+    }, []);
+  
+    return number;
+  };
 const BarChart = ({ data }) => {
     const getColor = bar => {
         
@@ -17,7 +31,7 @@ const BarChart = ({ data }) => {
 
 
     <div style={{width:'100%', height:'88vh'}}>
-        <p style={{fontSize:"3vh", fontWeight:"bold"}}>Beverages shipped to Qantas Lounge</p>
+        <p style={{fontSize:"3vh", fontWeight:"bold"}}>Beverages Shipped to Qantas Lounge</p>
       <ResponsiveBar
         style={{fontSize:'10%'}}
         data={data}
@@ -27,10 +41,9 @@ const BarChart = ({ data }) => {
             'Wine',
             'Vodka',
             'Cola',
-
         ]}
         indexBy="Beverage Type"
-        margin={{ top: 2, right: 5, bottom: 27, left: 28 }}
+        margin={{ top: 5, right: 0, bottom: 27, left: 29}}
         padding={0.1}
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
@@ -84,7 +97,7 @@ const BarChart = ({ data }) => {
             size: '10',
             fontSize:14,
             legendPosition: 'middle',
-            legendOffset: -23,
+            legendOffset: -24,
             truncateTickAt: 0
         }}
         
