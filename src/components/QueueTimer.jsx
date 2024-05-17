@@ -21,8 +21,10 @@ function QueueTimer(){
     return(
         <div>
         <div style={{backgroundColor:"#BBF7D0", width:"100%", height:'100vh'}}>
-        <h2 style={{color:"#64748B", fontSize:"12vh"}}>Estimated Security <br></br>Queue Time:</h2>
-        <h3 style={{color:"#64748B",fontSize:"12vh"}}>{<Randomizer/>} Minutes {<Randomizer/>} Seconds</h3>
+          <div style={{padding:"5vh"}}>
+        <h2 style={{color:"#64748B", fontSize:"8vh"}}>Current Security <br></br>Queue Time:</h2>
+        <h3 style={{color:"#64748B",fontSize:"8vh"}}>{<Randomizer/>} Minutes {<Randomizer/>} Seconds</h3>
+        </div>
       </div>
       </div>
     )
