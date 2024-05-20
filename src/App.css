@@ -9,4 +9,14 @@
   color: black;
   overflow:visible;
 }
+table, th, td {
+  border: 1px solid;
+  border-color: #E2E8F0;
+}
+tr:nth-child(even) {
+  background-color: #FECACA;
+}
 
+tr:nth-child(odd) {
+  background-color: #BBF7D0;
+}
