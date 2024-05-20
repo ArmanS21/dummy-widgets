@@ -6,6 +6,7 @@ import QueueTimer from './components/QueueTimer';
 import ComTable from './components/ComTable';
 import PloTable from './components/PloTable';
 import BarhChart from './components/BarhChart';
+import LineChart from './components/LineChart';
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,7 @@ return (
     <Route path ="/CustomerComplaint"element={<ComTable/>}/>
     <Route path ="/Employee"element={<PloTable/>}/>
     <Route path ="/BagChart" element={<BarhChart/>}/>
+    <Route path = "/ViewChart" element={<LineChart/>}/>
     </Routes>
   </Router>
 );
