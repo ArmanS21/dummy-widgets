@@ -2,11 +2,11 @@ import React from 'react';
 import { ResponsiveBar } from '@nivo/bar';
 let datathree=[]
 const Randomizer = () => {
-    const [number, setNumber] = React.useState(Math.floor(Math.random() * (80-5)+5));
+    const [number, setNumber] = React.useState(Math.floor(Math.random() * (89-25)+25));
     React.useEffect(() => {
 
       const interval = setInterval(
-        () => setNumber(Math.floor(Math.random() * (80-5)+5)),
+        () => setNumber(Math.floor(Math.random() * (89-25)+25)),
         1500
       );
       return () => {
@@ -17,35 +17,35 @@ const Randomizer = () => {
     return number;
   };
 
-const BarChart = () => {
+const BarhChart = () => {
     datathree = [
         {
-          "Beverage Type": "Beer",
-          "Beer": Randomizer(),
+          "Time": "09:00",
+          "09:00": Math.ceil((Randomizer()+1)/10)*10,
     
         },
         {
-          "Beverage Type": "Wine",
-          "Wine": Randomizer(),
+          "Time": "12:00",
+          "12:00":  Math.ceil((Randomizer()+1)/10)*10,
     
         },
         {
-          "Beverage Type": "Vodka",
-          "Vodka": Randomizer(),
+          "Time": "18:00",
+          "18:00":  Math.ceil((Randomizer()+1)/10)*10,
         },
         {
-          "Beverage Type": "Cola",
-          "Cola": Randomizer(),
+          "Time": "22:00",
+          "22:00":  Math.ceil((Randomizer()+1)/10)*10,
     
         }
       ]
     const getColor = bar => {
         
         const colors = {
-          'Beer': '#FED7AA',
-          'Wine': '#FECACA',
-          'Vodka': '#BBF7D0',
-          'Cola':'#E9D5FF',
+          '09:00': '#FED7AA',
+          '12:00': '#E9D5FF',
+          '18:00': '#FECACA',
+          '22:00':'#BBF7D0',
         };
         return colors[bar.id] || 'gray';
       };
@@ -53,19 +53,20 @@ const BarChart = () => {
 
 
     <div style={{width:'100%', height:'88vh'}}>
-        <p style={{fontSize:"3vh", fontWeight:"bold"}}>Beverages Shipped to Qantas Lounge</p>
+        <p style={{fontSize:"3vh", fontWeight:"bold"}}>Baggage Load by Time</p>
       <ResponsiveBar
         style={{fontSize:'10%'}}
+        layout="horizontal"
         data={datathree}
         colors={getColor}
         keys={[
-            'Beer',
-            'Wine',
-            'Vodka',
-            'Cola',
+            '09:00',
+            '12:00',
+            '18:00',
+            '22:00',
         ]}
-        indexBy="Beverage Type"
-        margin={{ top: 5, right: 0, bottom: 27, left: 29}}
+        indexBy="Time"
+        margin={{ top: 5, right: 10, bottom: 26.5, left: 41}}
         padding={0.1}
         valueScale={{ type: 'linear' }}
         indexScale={{ type: 'band', round: true }}
@@ -87,7 +88,7 @@ const BarChart = () => {
             tickSize: 2,
             tickPadding: 1,
             tickRotation: 0,
-            legend: 'Beverage Type',
+            legend: 'Bags on Carousel E',
             legendPosition: 'middle',
             legendOffset: 20,
             truncateTickAt: 0
@@ -96,11 +97,11 @@ const BarChart = () => {
             tickSize: 2,
             tickPadding: 0,
             tickRotation: 0,
-            legend: 'Boxes Shipped',
+            legend: 'Time',
             size: '10',
             fontSize:14,
             legendPosition: 'middle',
-            legendOffset: -24,
+            legendOffset: -36,
             truncateTickAt: 0
         }}
         
@@ -122,4 +123,4 @@ const BarChart = () => {
   );
 };
 
-export default BarChart;
+export default BarhChart;
