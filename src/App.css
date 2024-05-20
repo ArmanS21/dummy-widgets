@@ -9,7 +9,7 @@
   color: black;
   overflow:visible;
 }
-table, th, td {
+table.CustTable, th.CustTable, td.CustTable {
   border: 1px solid;
   border-color: #E2E8F0;
 }
@@ -19,4 +19,15 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
   background-color: #BBF7D0;
+}
+table.PloTable, th.PloTable, td.PloTable {
+  border: 1px solid;
+  border-color: #E9D5FF;
+}
+tr:nth-child(even) {
+  background-color: #E9D5FF;
+}
+
+tr:nth-child(odd) {
+  background-color: #E2E8F0;
 }

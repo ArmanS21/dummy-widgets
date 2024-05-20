@@ -25,7 +25,7 @@ function ComTable() {
     return (
         <div style={{paddingBottom:'2vh'}}>
 
-            <table  style={{width:'100%', height:'90vh'}}>
+            <table className="CustTable" style={{width:'100%', height:'90vh'}}>
             <caption style={{fontSize:'3vh', fontWeight:'bold'}}>Customer Complaints</caption>
                 <thead>
                 
