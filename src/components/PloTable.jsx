@@ -24,9 +24,9 @@ function PloTable() {
         { name: "Michael", time: "15:30", ida: Randomizer(), idb: Randomizer(), session: "Sensitivity Training"}
     ]
     return (
-        <div style={{paddingBottom:'2vh'}}>
+        <div style={{paddingBottom:'2vh',display: 'flex', justifyContent: 'center', alignItems:'center'}}>
 
-            <table className="PloTable" style={{width:'98%', height:'80vh'}}>
+            <table className="PloTable" style={{width:'98%', height:'90vh'}}>
                 <thead>
                 
                 <tr>
