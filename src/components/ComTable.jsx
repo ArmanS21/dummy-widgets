@@ -23,9 +23,9 @@ function ComTable() {
         { name: "Gordon", priority: Randomizer(), issue: "Raw Food"}
     ]
     return (
-        <div style={{paddingBottom:'2vh'}}>
+        <div style={{paddingBottom:'2vh',display: 'flex', justifyContent: 'center', alignItems:'center'}}>
 
-            <table className="CustTable" style={{width:'95%', height:'82vh'}}>
+            <table className="CustTable" style={{width:'97%', height:'82vh'}}>
 
                 <thead>
                 
