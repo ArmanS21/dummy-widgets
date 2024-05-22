@@ -26,7 +26,7 @@ function PloTable() {
     return (
         <div style={{paddingBottom:'2vh'}}>
 
-            <table className="PloTable" style={{width:'85%', height:'80vh'}}>
+            <table className="PloTable" style={{width:'98%', height:'80vh'}}>
                 <thead>
                 
                 <tr>
