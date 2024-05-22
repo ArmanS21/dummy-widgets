@@ -2,8 +2,7 @@
 
 function ProgBar() {
   return (
-    <div style={{fontSize:"3.2vh", stroke:"white", backgroundColor:'#E2E8F0', paddingBottom:'1vh'}}>
-        <p style={{fontWeight:'bold'}}>Operational Transmission Channels</p>
+    <div style={{fontSize:"3.2vh", stroke:"white", paddingBottom:'0.5vh'}}>
         <p style={{background:'#FECACA', height:'5vh'}}>London <progress style={{width:"50%", height:'3.5vh'}} value={null} /> W.Sydney</p>
 
 
@@ -30,7 +29,7 @@ function ProgBar() {
   
 
     <p style={{background:'#BBF7D0'}}>Albany <progress style={{width:"50%", height:'3.5vh'}} value={null} /> W.Sydney</p>
-    <p style={{background:'#E9D5FF'}}> Brooklyn <progress style={{width:"50%", height:'3.5vh'}} value={null} /> W.Sydney</p>
+
     </div>
   );
 }

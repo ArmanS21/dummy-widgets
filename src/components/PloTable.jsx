@@ -19,21 +19,20 @@ function PloTable() {
 
     const data = [
 
-        { name: "Ryan", time: "09:00", ida: Randomizer(), idb: Randomizer(), session: "Baggage Handler Induction Session" },
-        { name: "Jim", time: "12:15", ida: Randomizer(), idb: Randomizer(), session: "Internship Onboarding Session" },
-        { name: "Michael", time: "15:30", ida: Randomizer(), idb: Randomizer(), session: "Sensitivity Training Session 2"}
+        { name: "Ryan", time: "09:00", ida: Randomizer(), idb: Randomizer(), session: "Baggage Orientation" },
+        { name: "Jim", time: "12:15", ida: Randomizer(), idb: Randomizer(), session: "Internship Onboarding" },
+        { name: "Michael", time: "15:30", ida: Randomizer(), idb: Randomizer(), session: "Sensitivity Training"}
     ]
     return (
         <div style={{paddingBottom:'2vh'}}>
 
-            <table className="PloTable" style={{width:'100%', height:'90vh'}}>
-            <caption style={{fontSize:'3vh', fontWeight:'bold'}}>Upcoming Scheduled Training</caption>
+            <table className="PloTable" style={{width:'85%', height:'80vh'}}>
                 <thead>
                 
                 <tr>
-                    <th>Employee Name</th>
-                    <th>Employee ID</th>
-                    <th>Session Start Time</th>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Start</th>
                     <th>Training</th>
                 </tr>
                 </thead>

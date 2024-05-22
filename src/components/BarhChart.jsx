@@ -53,7 +53,6 @@ const BarhChart = () => {
 
 
     <div style={{width:'100%', height:'88vh'}}>
-        <p style={{fontSize:"3vh", fontWeight:"bold"}}>Baggage Load by Time</p>
       <ResponsiveBar
         style={{fontSize:'10%'}}
         layout="horizontal"

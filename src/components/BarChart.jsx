@@ -53,7 +53,6 @@ const BarChart = () => {
 
 
     <div style={{width:'100%', height:'88vh'}}>
-        <p style={{fontSize:"3vh", fontWeight:"bold"}}>Beverages Shipped to Qantas Lounge</p>
       <ResponsiveBar
         style={{fontSize:'10%'}}
         data={datathree}

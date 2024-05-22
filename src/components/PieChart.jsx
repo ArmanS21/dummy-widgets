@@ -38,9 +38,8 @@ const PieChart = () => {
       };
     return(
 
-        <div style={{width:'100%', height:'95vh'}}>
+        <div style={{width:'100%', height:'88vh'}}>
 
-<p style={{fontSize:"1vh", fontWeight:"bold"}}>Passenger Concentration</p>
     <ResponsivePie
       data={datatwo}
       

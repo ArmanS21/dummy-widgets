@@ -86,7 +86,6 @@ const Randomizer = () => {
   return(
 
     <div style={{width:'100%', height:'88vh'}}>
-        <p style={{fontSize:"3vh", fontWeight:"bold"}}>WSA Social Views for the Week (First Half)</p>
 
 
 
