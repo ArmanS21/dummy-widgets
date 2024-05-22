@@ -9,16 +9,16 @@
   color: black;
   overflow:visible;
 }
+
 table.CustTable, th.CustTable, td.CustTable {
   border: 1px solid;
   border-color: #FECACA;
 }
-tr:nth-child(even) {
+.CustTable tr:nth-child(even) {
   background-color: #FECACA;
 }
-
-tr:nth-child(odd) {
-  background-color: #BBF7D0;
+tr.CustTable:nth-child(odd) {
+  background-color: #FECACA;
 }
 table.PloTable, th.PloTable, td.PloTable {
   border: 1px solid;
