@@ -18,7 +18,7 @@ const Randomizer = () => {
 
 function SecureForm(){
 return(
-    <div style={{height:'85vh', width:'100%',background:'#FECACA',display: 'flex', justifyContent: 'center', alignItems:'center', border:'1px dashed'}}>
+    <div style={{height:'85vh', width:'100%',background:'#FECACA',display: 'flex', justifyContent: 'center', alignItems:'center'}}>
 
     <form style={{fontSize:'4vh', fontWeight:'bold'}}>
     Available Guards<br/>
