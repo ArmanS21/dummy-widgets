@@ -10,6 +10,7 @@ import LineChart from './components/LineChart';
 import ProgBar from './components/ProgBar';
 import StreamChart from './components/StreamChart';
 import BullChart from './components/BullChart';
+import SecureForm from './components/SecureForm';
 
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -29,6 +30,7 @@ return (
     <Route path = "/porttoport" element={<ProgBar/>}/>
     <Route path = "/airpressure" element={<StreamChart/>}/>
     <Route path = "/bullmonitor" element={<BullChart/>}/>
+    <Route path = "/secureform" element={<SecureForm/>}/>
     </Routes>
   </Router>
 );

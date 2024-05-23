@@ -31,3 +31,21 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: #E2E8F0;
 }
+select{
+  width:90%;
+  height:10vh;
+
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 4vh;
+  text-align: center;
+}
+input{
+  width:90%;
+  height:10vh;
+
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 4vh;
+  text-align: center;
+}
