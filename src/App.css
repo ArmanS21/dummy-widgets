@@ -31,6 +31,16 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: #E2E8F0;
 }
+table.SecurTable, th.SecurTable, td.SecurTable{
+  border: 1px solid;
+  border-color: #FECACA;
+}
+.SecurTable tr:nth-child(even) {
+  background-color: #BBF7D0;
+}
+.SecurTable tr:nth-child(odd) {
+  background-color: #FECACA;
+}
 select{
   width:90%;
   height:10vh;

@@ -30,7 +30,7 @@ return (
     <Route path = "/porttoport" element={<ProgBar/>}/>
     <Route path = "/airpressure" element={<StreamChart/>}/>
     <Route path = "/bullmonitor" element={<BullChart/>}/>
-    <Route path = "/secureform" element={<SecureForm/>}/>
+    <Route path = "/incidentlog" element={<SecureForm/>}/>
     </Routes>
   </Router>
 );
