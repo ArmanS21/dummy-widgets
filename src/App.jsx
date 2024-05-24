@@ -11,7 +11,7 @@ import ProgBar from './components/ProgBar';
 import StreamChart from './components/StreamChart';
 import BullChart from './components/BullChart';
 import SecureForm from './components/SecureForm';
-
+import RadarChart from './components/RadarChart';
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -31,6 +31,7 @@ return (
     <Route path = "/airpressure" element={<StreamChart/>}/>
     <Route path = "/bullmonitor" element={<BullChart/>}/>
     <Route path = "/incidentlog" element={<SecureForm/>}/>
+    <Route path = "/Radar" element={<RadarChart/>}/>
     </Routes>
   </Router>
 );

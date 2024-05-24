@@ -13,6 +13,7 @@
 table.CustTable, th.CustTable, td.CustTable {
   border: 1px solid;
   border-color: #FECACA;
+  font-size: 3vh;
 }
 .CustTable tr:nth-child(even) {
   background-color: #FECACA;
@@ -23,6 +24,7 @@ tr.CustTable:nth-child(odd) {
 table.PloTable, th.PloTable, td.PloTable {
   border: 1px solid;
   border-color: #E9D5FF;
+  font-size: 3vh;
 }
 tr:nth-child(even) {
   background-color: #E9D5FF;
