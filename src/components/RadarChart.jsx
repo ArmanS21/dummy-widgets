@@ -120,7 +120,7 @@ const Randomizer = () => {
     React.useEffect(() => {
   
       const interval = setInterval(
-        () => setNumber(Math.floor(Math.random() * (10000-5000) + 5000)),
+        () => setNumber(Math.floor(Math.random() * (10000-5000) + 50)),
         1500
       );
       return () => {
@@ -135,7 +135,7 @@ const RadarChart = () => {
     let data = [
         {
           "type": "360°",
-          "Plane": 0,
+          "Plane": Randomizer(),
         },
         {
           "type": "90°",
