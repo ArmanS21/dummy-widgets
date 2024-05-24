@@ -143,10 +143,20 @@ const RadarChart = () => {
 
         },
         {
+            "type": "135°",
+            "Plane": Randomizer(),
+  
+          },
+        {
           "type": "180°",
           "Plane": Randomizer(),
 
         },
+        {
+            "type": "225°",
+            "Plane": Randomizer(),
+  
+          },
         {
           "type": "270°",
           "Plane": Randomizer(),
@@ -164,7 +174,7 @@ const RadarChart = () => {
         margin={{ top: 15, right: 35, bottom: 15, left: 37}}
         borderColor={'#E2E8F0'} 
         borderWidth={0}
-        
+
         gridLabelOffset={9}
         dotSize={8}
         enableDotLabel={true}
@@ -174,6 +184,7 @@ const RadarChart = () => {
         colors={"transparent"}
         blendMode="multiply"
         motionConfig="wobbly"
+        dotPosition='between'
         theme={newTheme}
     />
     </div>
