@@ -135,7 +135,7 @@ const RadarChart = () => {
     let data = [
         {
           "type": "360°",
-          "Plane": Randomizer(),
+          "Plane": Randomizer()-3000,
         },
         {
           "type": "90°",
