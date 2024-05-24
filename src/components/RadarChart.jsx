@@ -135,7 +135,7 @@ const RadarChart = () => {
     let data = [
         {
           "type": "360°",
-          "Plane": Randomizer()-4000,
+          "Plane": 0,
         },
         {
           "type": "90°",
@@ -170,7 +170,8 @@ const RadarChart = () => {
         enableDotLabel={true}
         dotLabel="key"
         dotBorderWidth={1}
-        colors={'red'}
+        dotColor={'red'}
+        colors={"transparent"}
         blendMode="multiply"
         motionConfig="wobbly"
         theme={newTheme}
