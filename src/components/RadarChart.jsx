@@ -120,7 +120,7 @@ const Randomizer = () => {
     React.useEffect(() => {
   
       const interval = setInterval(
-        () => setNumber(Math.floor(Math.random() * (10000-5000) + 50)),
+        () => setNumber(Math.floor(Math.random() * (10000-5000) + 5000)),
         1500
       );
       return () => {
