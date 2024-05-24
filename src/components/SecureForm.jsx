@@ -26,7 +26,7 @@ function SecureForm(){
 return(
   <div style={{paddingBottom:'2vh',display: 'flex', justifyContent: 'center', alignItems:'center'}}>
 
-  <table className="SecurTable" style={{width:'95%', height:'85vh'}}>
+  <table className="SecurTable" style={{width:'100%', height:'85vh'}}>
       <thead>
       
       <tr>

@@ -34,6 +34,7 @@ tr:nth-child(odd) {
 table.SecurTable, th.SecurTable, td.SecurTable{
   border: 1px solid;
   border-color: #FECACA;
+  font-size: 3vh;
 }
 .SecurTable tr:nth-child(even) {
   background-color: #BBF7D0;
